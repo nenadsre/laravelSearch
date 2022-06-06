@@ -77,7 +77,7 @@ class FileManager {
         $termsResult    = SearchTermRepo::search($term);
         $fileIds        = array_unique(array_merge($filenameResult, $termsResult));
 
-        return FileRepo::fetchAndFormat($fileIds);
+        return ['files' => FileRepo::fetchAndFormat($fileIds)];
     }
 
 

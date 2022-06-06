@@ -41,10 +41,12 @@ request
     "term": "txt"
 }
 
-response [
-    "local/public/dva.txt",
-    "local/public/test.txt",
-    "local/public/telefon.txt",
-    "local/public/flomaster.txt"
-]
+response {
+    "files": [
+        "local/public/dva.txt",
+        "local/public/test.txt",
+        "local/public/telefon.txt",
+        "local/public/flomaster.txt"
+    ]
+}
 
